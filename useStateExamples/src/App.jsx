@@ -10,7 +10,7 @@ import SimpleForm from './components/simpleForm';
 function App() {
   return (
     <>
-      <Counter/>
+      {/* <Counter/> */}
       <ToggleText/>
       <InputFieldexample/>
       <TodoList/>

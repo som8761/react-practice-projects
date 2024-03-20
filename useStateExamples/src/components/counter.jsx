@@ -5,6 +5,9 @@ const Counter = () => {
   const [inputField, setInputField] = useState(''); 
   const [displayText, setDisplayText] = useState(''); 
 
+  function inputText(e){
+    setInputField(e.target.value)
+  }
 
   function userInteract(){
     if(inputField === ''){
@@ -28,7 +31,7 @@ const Counter = () => {
 
 
 
-    <input type="text" placeholder='write something' value={inputField} onChange={(e)=>{setInputField(e.target.value)}}/>
+    <input type="text" placeholder='write something' value={inputField} onChange={inputText}/>
 
     <button onClick={userInteract}>search</button>
 
