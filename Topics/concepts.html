@@ -1,0 +1,47 @@
+
+1) when we can use use ref?
+
+<!-- You can use useRef hook in React.js in various situations, including:
+
+Accessing DOM elements: If you need to interact with a DOM element directly, such as focusing an input, animating an element, or measuring its dimensions, useRef can be used to create a reference to that DOM element.
+
+Storing mutable values: Unlike state variables (managed by useState), values stored in a ref persist across renders and won't trigger a re-render when updated. This makes useRef suitable for storing mutable values that you don't want to cause re-renders.
+
+Preserving values between renders: Since values stored in a ref persist across renders and component lifecycles, useRef can be used to preserve values between renders without causing re-renders.
+
+Accessing previous state or props: You can use useRef to store previous state or props values, which can be useful for comparing changes between renders without triggering re-renders.
+
+Managing focus, timers, or subscriptions: useRef can be used to maintain references to focusable elements, timers, or subscriptions, allowing you to control their behavior across renders and component lifecycles.
+
+Overall, useRef is particularly useful when you need to interact with DOM elements directly or when you need to store mutable values without causing re-renders. -->
+
+
+2)Do i need to use useRef instead of useState?
+
+<!-- No, you typically should not use useRef instead of useState for managing component state in React.js. While both useRef and useState hooks can be used to store values, they serve different purposes and have different behaviors:
+
+useState: Used for managing component state that triggers re-renders when updated. It is typically used for storing data that affects the rendering of your component.
+
+useRef: Used for storing mutable values that persist across renders without triggering re-renders. It is commonly used for accessing and interacting with DOM elements, storing previous values, managing focus, timers, or subscriptions.
+
+While it's true that useRef can store mutable values without causing re-renders, it doesn't trigger component re-renders when the value changes. This means that if you use useRef to manage component state instead of useState, your component won't re-render when the value changes, which may lead to unexpected behavior.
+
+In summary, use useState for managing component state that affects rendering, and use useRef for storing mutable values, accessing DOM elements, or managing focus, timers, or subscriptions. They serve different purposes and should be used accordingly. -->
+
+
+
+3) when i need to use usestate instead of useref?
+
+
+<!-- You can use useState instead of useRef in React.js in various situations, including:
+
+Managing component state that affects rendering: If you need to manage component state that affects the rendering of your component and triggers re-renders when updated, useState is the appropriate choice. For example, when you need to update and display data in your component based on user interactions, form inputs, or API responses.
+
+Storing values that should trigger re-renders: Since useState triggers re-renders when the state is updated, it's suitable for managing values that should cause your component to re-render when changed. This is useful for displaying dynamic content that updates in response to user actions or data changes.
+
+Handling complex state logic: If your component requires complex state logic, such as managing multiple related state variables or using state updater functions, useState provides a convenient way to handle such scenarios.
+
+Updating state in response to asynchronous actions: useState is suitable for updating component state in response to asynchronous actions, such as fetching data from an API or handling user events, as it ensures that your component re-renders with the updated state.
+
+In summary, use useState when you need to manage component state that affects rendering and should trigger re-renders when updated, especially for handling dynamic content, complex state logic, or asynchronous actions. Use useRef for storing mutable values that persist across renders without triggering re-renders, typically for accessing DOM elements or managing non-render-related data.
+ -->

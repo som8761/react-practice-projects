@@ -1,0 +1,14 @@
+TOPICS ALREADY DONE:
+
+1: use State
+2: use Effect
+3: use Ref
+
+
+NEED TO BE DONE:
+
+1:  useReducer
+2:  useCallback
+3:  useMemo
+4:  useLayoutEffect
+5:  Custom Hooks
