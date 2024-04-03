@@ -3,12 +3,17 @@ TOPICS ALREADY DONE:
 1: use State
 2: use Effect
 3: use Ref
+4: useReducer
+5: Prop_drilling
+6: context Api
+7: use context
+8: useMemo
+9: useCallback
 
 
 NEED TO BE DONE:
 
-1:  useReducer
-2:  useCallback
-3:  useMemo
-4:  useLayoutEffect
-5:  Custom Hooks
+1:  useLayoutEffect
+2:  Custom Hooks
+
+
